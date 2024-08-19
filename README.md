@@ -1,5 +1,8 @@
 # Object Oriented Programming Character Case Study
+
+## Description
 An OOP case study of generic Character Class in game.
+[Here's the Google Docs Link...](https://docs.google.com/document/d/1SfA0n4gf2dMoEv-UnHUOUnf0ZzSxLKAUp__gcnMQMw0/edit?usp=sharing)
 
 ## Information
 | Key          | Value                       |
