@@ -24,26 +24,26 @@ There are 2 parts:
 This Character Class is the representation or blueprint of a character in a game. When you play a character in a game, it has some attributes such as, character id, name, health point, and other stats.
 
 #### Character Attributes
-- m_ id : NUMBER : UNIQUE
+- `m_ id` : NUMBER : UNIQUE
     - Character unique identifier.
 
-- m_name : TEXT
+- `m_name` : TEXT
     - Characters name
 
-- m_isAlive : BOOLEAN
+- `m_isAlive` : BOOLEAN
     - Characters' life state.
 
-- m_currentHP : NUMBER
+- `m_currentHP` : NUMBER
     - Current health point of character.
     Minimum value is 0, if value dropped to 0, m_isAlive is set to false
 
-- m_maxHP: NUMBER
+- `m_maxHP`: NUMBER
     - Maximum health point of the character.
 
-- m_atk : NUMBER
+- `m_atk` : NUMBER
     - Characters attack value.
 
-- m_def: NUMBER
+- `m_def`: NUMBER
     - Characters' defense value.
 
 #### Character Functions
@@ -57,7 +57,6 @@ This Character Class is the representation or blueprint of a character in a game
         Grezzle (ALIVE) | Lvl. 10
         -----------------------------
         HP: 90/100
-        MP: 50/50
         ```
 - BasicAttack(Character target)
     - If both characters are alive, a basic attack could proceed.
@@ -88,7 +87,6 @@ This Character Class is the representation or blueprint of a character in a game
             Grezzle (ALIVE) | Lvl. 10
             -----------------------------
             HP: 22/100
-            MP: 50/50
         - Balmont.BasicAttack(Grezzle);
             ```
             “Balmont is launching a basic attack to Grezzle with damage value 68…”
@@ -98,14 +96,13 @@ This Character Class is the representation or blueprint of a character in a game
             Grezzle (DEAD) | Lvl. 10
             -----------------------------
             HP: 0/100
-            MP: 50/50
             ```
 #### Instruction
 1. Write a Character class
 2. Write the source code to:
     1. Create 2 Character Instances with requirements
-        - Balmont, max HP 100, max MP 20, current HP 80, current MP 20, ATK 100, DEF 15
-        - Grezzle, max HP 100, max MP 50, current HP 90, current MP 50, ATK 75, DEF 32
+        - Balmont, max HP 100, current HP 80, ATK 100, DEF 15
+        - Grezzle, max HP 100, current HP 90, ATK 75, DEF 32
     2. Print Balmont and Grezzle Basic States
     3. Balmont attacks Grezzle
     4. Print Grezzles Basic State
@@ -117,7 +114,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
 
 ### Hero
 - Has enumeration 
-    - HeroType: MELEE, RANGED, MAGIC, TANK, HEALER, BUFFER
+    - `HeroType: MELEE, RANGED, MAGIC, TANK, HEALER, BUFFER`
 - Has function 
     - CastSkil(Skill skillInstance, Character target);
     - PrintState() adds additional information of the HeroType
@@ -125,11 +122,10 @@ Write 2 classes of Character subclasses: Hero, and Monster
     HERO | Grezzle [RANGED] (DEAD)| Lvl. 10
     -----------------------------
     HP: 0/100
-    MP: 50/50
     ```
 ### Monster
 - Has enumeration 
-    - MonsterType: WILD, MINION, MINI_BOSS, BOSS
+    - `MonsterType: WILD, MINION, MINI_BOSS, BOSS`
 - Has function
     - targets(Character target);
     - PrintState() adds additional information of the MonsterType
@@ -137,7 +133,6 @@ Write 2 classes of Character subclasses: Hero, and Monster
     MONSTER | Gobleen [WILD] (ALIVE) | Lvl. 10
     -----------------------------
     HP: 30/30
-    MP: 10/10
 
 ### Instruction
 
