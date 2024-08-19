@@ -16,8 +16,8 @@ Assess participants' knowledge and experience of OOP concepts and implementation
 
 ## Instruction
 There are 2 parts:
-- the "Part 1" will instruct you write a Character Class to learn about the "Composition" and "Encapsulation" of the OOP concept. 
-- the "Part 2" will instruct you to write the Sub-Classes of Character Class to learn about the "Inheritance" concept in the OOP
+- The "Part 1" will instruct you to write a Character Class to learn about the "Composition" and "Encapsulation" of the OOP concept. 
+- The "Part 2" will instruct you to write the Sub-Classes of Character Class to learn about the "Inheritance" concept in the OOP
 
 ## Part 1
 
