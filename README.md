@@ -100,6 +100,13 @@ This Character Class is the representation or blueprint of a character in a game
             -----------------------------
             HP: 0/100
             ```
+    - If the attack valid, call targets' ReceiveDamage() function.
+- ReceiveDamage(int damage)
+    - Reduce character's current HP value by damage value (param).
+    - Clamp to zero and maxHP
+    - If current HP is zero, set m_isAlive to false
+
+
 #### Instruction
 1. Write a Character class
 2. Write the source code to:
@@ -108,9 +115,45 @@ This Character Class is the representation or blueprint of a character in a game
         - Grezzle, max HP 100, current HP 90, ATK 75, DEF 32
     2. Print Balmont and Grezzle Basic States
     3. Balmont attacks Grezzle
-    4. Print Grezzles Basic State
-    5. Balmont attacks Grezzle again
-    6. Print Balmont and Grezzle Basic States
+    4. Grezzle attacks Balmont
+    5. Print Balmont and Grezzle Basic States
+    3. Balmont attacks Grezzle
+    4. Grezzle attacks Balmont
+    5. Print Balmont and Grezzle Basic States
+#### Output
+```
+Balmont (ALIVE)
+--------------------------------
+HP: 80/100
+
+Grezzle (ALIVE)
+--------------------------------
+HP: 90/100
+
+Balmont is launching a basic attack to Grezzle with damage value 68...
+
+Grezzle is launching a basic attack to Balmont with damage value 60...
+
+Balmont (ALIVE)
+--------------------------------
+HP: 20/100
+
+Grezzle (ALIVE)
+--------------------------------
+HP: 22/100
+
+Balmont is launching a basic attack to Grezzle with damage value 68...
+
+Basic Attack FAILED, the attacker (Grezzle) is DEAD.
+
+Balmont (ALIVE)
+--------------------------------
+HP: 20/100
+
+Grezzle (DEAD)
+--------------------------------
+HP: 0/100
+```
 
 ## Part 2
 Write 2 classes of Character subclasses: Hero, and Monster
