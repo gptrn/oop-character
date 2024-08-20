@@ -57,7 +57,7 @@ This Character Class is the representation or blueprint of a character in a game
 - PrintBasicState()
     - Output characters current state, HP and MP, example:
         ```
-        Grezzle (ALIVE) | Lvl. 10
+        Grezzle (ALIVE)
         -----------------------------
         HP: 90/100
         ```
@@ -87,7 +87,7 @@ This Character Class is the representation or blueprint of a character in a game
             ```
         - Grezzle.PrintBasicState()
             ```
-            Grezzle (ALIVE) | Lvl. 10
+            Grezzle (ALIVE)
             -----------------------------
             HP: 22/100
         - Balmont.BasicAttack(Grezzle);
@@ -96,7 +96,7 @@ This Character Class is the representation or blueprint of a character in a game
             ```
         - Grezzle.PrintBasicState()
             ```            
-            Grezzle (DEAD) | Lvl. 10
+            Grezzle (DEAD)
             -----------------------------
             HP: 0/100
             ```
@@ -122,7 +122,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
     - CastSkil(Skill skillInstance, Character target);
     - PrintState() adds additional information of the HeroType
     ```
-    HERO | Grezzle [RANGED] (DEAD)| Lvl. 10
+    HERO | Grezzle [RANGED] (DEAD)
     -----------------------------
     HP: 0/100
     ```
@@ -133,7 +133,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
     - targets(Character target);
     - PrintState() adds additional information of the MonsterType
     ```
-    MONSTER | Gobleen [WILD] (ALIVE) | Lvl. 10
+    MONSTER | Gobleen [WILD] (ALIVE)
     -----------------------------
     HP: 30/30
 
