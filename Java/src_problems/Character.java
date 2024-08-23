@@ -11,7 +11,7 @@ public class Character{
         this.id = id;
         this.name = name;
         this.maxHP = maxHP;
-        this.currentHP = currentHP;
+
         this.atk = atk;
         this.def = atk;
 

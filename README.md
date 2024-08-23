@@ -162,7 +162,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
 - Has enumeration 
     - `HeroType: MELEE, RANGED, MAGIC, TANK, HEALER, BUFFER`
 - Has function 
-    - CastSkil(Skill skillInstance, Character target);
+    - CastSkill(Skill skillInstance, Character target);
     - PrintState() adds additional information of the HeroType
     ```
     HERO | Grezzle [RANGED] (DEAD)
@@ -173,7 +173,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
 - Has enumeration 
     - `MonsterType: WILD, MINION, MINI_BOSS, BOSS`
 - Has function
-    - targets(Character target);
+    - Targets(Character target);
     - PrintState() adds additional information of the MonsterType
     ```
     MONSTER | Gobleen [WILD] (ALIVE)
