@@ -197,6 +197,17 @@ Write 2 classes of Character subclasses: Hero, and Monster
 
 # Build and Run the Project
 ## Java
+### Testcase 1
+```
+Java\src_problems\_build_testcase1.bat
+```
+
+### Testcase 2
+```
+Java\src_problems\_build_testcase2.bat
+```
+
+### Build All Testcases
 ```
 Java\src_problems\_build_and_run.bat
 ```
