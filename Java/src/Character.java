@@ -1,44 +1,38 @@
 public class Character{
-    private int id;
-    private String name;
+    private int     id;
+    private String  name;
     private boolean isAlive;
-    private int maxHP;
-    private int currentHP;
-    private int atk;
-    private int def;
+    private int     maxHP;
+    private int     currentHP;
+    private int     atk;
+    private int     def; 
 
     public Character(int id, String name, int maxHP, int currentHP, int atk, int def){
-        this.id = id;
-        this.name = name;
-        this.maxHP = maxHP;
-        this.currentHP = currentHP;
-        this.atk = atk;
-        this.def = def;
+        this.id         = id;
+        this.name       = name;
+        this.maxHP      = maxHP;
+        this.currentHP  = currentHP;
+        this.atk        = atk;
+        this.def        = def;
 
         if(this.currentHP > this.maxHP){
             this.currentHP = this.maxHP;
         }
-
         if(this.currentHP > 0){
             this.isAlive = true;
-        }else{
+        }
+        else{
             this.currentHP = 0;
             this.isAlive = false;
         }
     }
 
-    public String GetName(){
-        return this.name;
-    }
-    public boolean IsAlive(){
-        return this.isAlive;
-    }
-    public int GetAtk(){
-        return this.atk;
-    }
-    public int GetDef(){
-        return this.def;
-    }
+    public String GetName(){ return this.name; }
+    public boolean IsAlive(){ return this.isAlive; }
+    public int GetAtk(){ return this.atk; }
+    public int GetDef(){ return this.def; }
+    public int GetCurrentHP(){ return this.currentHP; }
+    public int GetMaxHP(){ return this.maxHP; }
 
     public void PrintBasicInfo(){
         String strAlive = this.IsAlive() ? "(ALIVE)" : "(DEAD)"; 
