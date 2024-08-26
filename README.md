@@ -54,7 +54,7 @@ This Character Class is the representation or blueprint of a character in a game
 ##### Public
 - Constructors (& Destructor, optional, only if the programming language is supporting class destructor, e.g. C++)
 - Getters & Setters
-- PrintBasicState()
+- PrintBasicInfo()
     - Output characters current state, HP and MP, example:
         ```
         Grezzle (ALIVE)
@@ -85,7 +85,7 @@ This Character Class is the representation or blueprint of a character in a game
             ```
             “Balmont is launching a basic attack to Grezzle with damage value 68…”
             ```
-        - Grezzle.PrintBasicState()
+        - Grezzle.PrintBasicInfo()
             ```
             Grezzle (ALIVE)
             -----------------------------
@@ -94,7 +94,7 @@ This Character Class is the representation or blueprint of a character in a game
             ```
             “Balmont is launching a basic attack to Grezzle with damage value 68…”
             ```
-        - Grezzle.PrintBasicState()
+        - Grezzle.PrintBasicInfo()
             ```            
             Grezzle (DEAD)
             -----------------------------
@@ -163,7 +163,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
     - `HeroType: MELEE, RANGED, MAGIC, TANK, HEALER, BUFFER`
 - Has function 
     - CastSkill(Skill skillInstance, Character target);
-    - PrintState() adds additional information of the HeroType
+    - PrintBasicInfo() adds additional information of the HeroType
     ```
     HERO | Grezzle [RANGED] (DEAD)
     -----------------------------
@@ -174,7 +174,7 @@ Write 2 classes of Character subclasses: Hero, and Monster
     - `MonsterType: WILD, MINION, MINI_BOSS, BOSS`
 - Has function
     - Targets(Character target);
-    - PrintState() adds additional information of the MonsterType
+    - PrintBasicInfo() adds additional information of the MonsterType
     ```
     MONSTER | Gobleen [WILD] (ALIVE)
     -----------------------------
@@ -185,3 +185,12 @@ Write 2 classes of Character subclasses: Hero, and Monster
 1. Write Hero, and Monster classes, with each type's enumerator!
 1. Create 2 Hero instances with different HeroTypes!
 1. Create 3 Monster instances with different MonsterTypes!
+1. Write the Testcase:
+    1. Print Hero1 info
+    1. Print Hero2 info
+    1. Print Monster1 info
+    1. Print Monster2 info
+    1. Print Monster3 info
+    1. Hero1 Casts Skill1 to Monster1
+    1. Hero2 Casts Skill2 to Monster1
+    1. Monster1 targets Hero1

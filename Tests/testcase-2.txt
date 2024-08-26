@@ -1,0 +1,29 @@
+HERO | Balmont [MELEE]  (ALIVE)
+--------------------------------
+HP: 80/100
+
+HERO | Grezzle [RANGED]  (ALIVE)
+--------------------------------
+HP: 90/100
+
+MONSTER | Gobleen [WILD]  (ALIVE)
+--------------------------------
+HP: 90/100
+
+MONSTER | Gobleen Warrior [MINION]  (ALIVE)
+--------------------------------
+HP: 150/200
+
+MONSTER | Gobleen Lord [MINI BOSS]  (ALIVE)
+--------------------------------
+HP: 900/1000
+
+
+Balmont is casting skill [Ground Bash] to Gobleen
+
+
+Grezzle is casting skill [Fire Arrow Rain] to Gobleen
+
+
+Gobleen is targeting Balmont
+
