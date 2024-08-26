@@ -194,3 +194,14 @@ Write 2 classes of Character subclasses: Hero, and Monster
     1. Hero1 Casts Skill1 to Monster1
     1. Hero2 Casts Skill2 to Monster1
     1. Monster1 targets Hero1
+
+# Build and Run the Project
+## Java
+```
+Java\src_problems\_build_and_run.bat
+```
+# Run the Testcases
+## Java
+```
+Java\src_problems\_run_tests.bat
+```
